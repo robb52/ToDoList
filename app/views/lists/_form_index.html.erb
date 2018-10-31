@@ -11,17 +11,8 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :completed %>
-    <%= form.check_box :completed %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-inline my-2 my-lg-0">
+    <%= form.text_field :description, class: "form-control mr-sm-2" %>
+    <%= form.submit  "Add Todo Item", class: "btn btn-outline-success my-2 my-sm-0"%>
   </div>
 <% end %>
