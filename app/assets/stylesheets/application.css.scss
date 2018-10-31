@@ -12,8 +12,64 @@
  *
  */
 @import "bootstrap";
-
+@import url('https://fonts.googleapis.com/css?family=Kalam|Rock+Salt|Spicy+Rice');
 
 .striker {
   text-decoration: line-through;
 }
+
+.navbar-brand {
+  color: #4C169B;
+  font-size: 35px;
+  margin-left: 40px;
+  font-family: 'Rock Salt', cursive;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar.navbar-expand-lg {
+  background-color: #706F71;
+
+}
+
+.btn.btn-outline-success.my-2.my-sm-0 {
+  color: #F176D1;
+  background-color: #CA169B;
+  border: none;
+}
+.btn.btn-outline-success.my-2.my-sm-0:hover {
+  color: #761A5F;
+}
+
+a.all {
+  text-decoration: none;
+  font-size: 13px;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: red;
+}
+
+a.all:hover {
+  background-color: red;
+  color: white;
+}
+
+a.list {
+  text-decoration: none;
+  color: #4C169B; 
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+}
+
+a.back {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
