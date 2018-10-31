@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   root 'lists#index'
 
+  get 'home/trash_em'
+
 end
