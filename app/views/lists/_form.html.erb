@@ -11,17 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
+  <div class="form-group">
+    <%= form.text_field :description, class: "form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :completed %>
+    <%= form.label :Finshed %>
     <%= form.check_box :completed %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Update Todo", class: "btn btn-outline-primary" %>
   </div>
 <% end %>

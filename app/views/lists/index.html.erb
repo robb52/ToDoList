@@ -7,7 +7,7 @@
         <tr class="table-secondary">
           <td class="striker"><%= link_to list.description, edit_list_path(list) %></td>
           <td>
-            <center><%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm" %></center>
+            <center><%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></center>
           </td>
         </tr>
 
@@ -15,7 +15,9 @@
         <tr>
           <td><%= link_to list.description, edit_list_path(list) %></td>
           <td>
-            <center><%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-sm" %></center>
+            <div class="trash">
+            <center><%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></center>
+          </div>
           </td>
         </tr>
       <% end %>
