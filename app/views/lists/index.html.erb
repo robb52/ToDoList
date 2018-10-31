@@ -7,13 +7,27 @@
         <tr class="table-secondary">
           <td class="striker"><%= link_to list.description, edit_list_path(list) %></td>
           <td>
+            <%= form_with(model: list, local: true) do |form| %>
+               <%= form.text_field :description, type: 'hidden' %>
+               <%= form.check_box :completed, :checked => false, :style => 'visibility: hidden' %>
+               <%= form.submit "Uncheck", class: "btn btn-warning btn-sm" %>
+            <% end %>
+          </td>
+          <td>
             <center><%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></center>
           </td>
         </tr>
-
       <% else %>
         <tr>
           <td><%= link_to list.description, edit_list_path(list) %></td>
+          <td>
+            <%= form_with(model: list, local: true) do |form| %>
+               <%= form.text_field :description, type: 'hidden' %>
+               <%= form.check_box :completed, :checked => true, :style => 'visibility: hidden' %>
+               <%= form.submit "Check-off", class: "btn btn-outline-success btn-sm" %>
+            <% end %>
+          </td>
+
           <td>
             <div class="trash">
             <center><%= link_to 'Remove', list, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></center>
