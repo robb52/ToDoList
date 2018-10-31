@@ -5,4 +5,9 @@ class HomeController < ApplicationController
     redirect_to root_url, notice: 'All Marked Items Were Successfully Removed.'
   end
 
+  def trash_em_all
+    @trash_em_all = List.all.destroy_all
+    redirect_to root_url, notice: 'All Items Were Successfully Removed.'
+  end
+
 end

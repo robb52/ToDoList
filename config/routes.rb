@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   get 'home/trash_em'
 
+  get 'home/trash_em_all'
+
 end
